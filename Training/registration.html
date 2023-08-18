@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  background-size: cover;
+}
+
+.container {
+  width: 30%;
+  padding: 10px;
+  margin-left: 35%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(0, 51, 102, 0.9);
+  border-radius: 20px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+select {
+  padding: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #6b9e43;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #469ffe;
+  opacity: 0.8;
+}
+
+.container p {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.container p a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.container p a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+</style>
+</head>
+<body background="back1.jpg">
+
+
+<div class="container">
+    <form>
+        <h2><center>Sign Up<center></h2>
+        <input type="text" placeholder="First Name" name="fname" required>
+        <input type="text" placeholder="Last Name" name="lname" required>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+        <input type="number" placeholder="Age" name="age" required>
+        <label>Gender:</label>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male" required> Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female" required> Female
+            </label>
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other" required> Other
+            </label>
+        <input type="number" placeholder="Phone" name="Phone" required>
+        <input type="email" placeholder="Email Address" name="email" required>
+        <input type="text" placeholder="Address" name="Address" required>
+        <label for="city">City:</label>
+        <select id="city" name="city">
+                <option>City 1</option>
+                <option>City 2</option>
+                <option>City 3</option>
+        </select><br>
+            
+        <label for="state">State:</label>
+        <select id="state" name="state">
+                <option>Kerala</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+        </select>
+        <input type="text" placeholder="Username" name="uname" required>
+        <input type="password" placeholder=" Password" name="psw" required>
+        <input type="password" placeholder=" Confirm Password" name="psw" required>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+        <p>By creating an account you agree to our <a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/about.html">Terms & Privacy</a>.</p>
+        </label>    
+        <button type="submit">Register</button>
+        
+
+    </form>
+</div>
+</body>
+</html>

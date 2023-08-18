@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #f3f3f3;
+        color: white;
+    }
+    .container {
+        background: #003366;
+        border-radius: 20px;
+        box-shadow: 40px rgba(12, 12, 12, 0.1);
+        padding: 10px;
+        width: 25%;
+        margin-left: 35%;
+        margin-top: 13%;
+    }
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    input[type="text"], input[type="password"] {
+        width: 94%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    button {
+        background-color: #6b9e43;
+        color: rgb(248, 245, 245);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    button:hover {
+        background-color: #0056b3;
+        opacity: 0.8;
+    }
+    p {
+        text-align: center;
+        margin-top: 10px;
+    }
+    a {
+        color: #469ffe;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+
+    span.psw{
+      float: right;
+    }
+</style>
+<title>Login</title>
+</head>
+<body background="back1.jpg" style="height: auto;">
+<div class="container">
+    <form>
+        <h2>Login</h2>
+        <input type="text" placeholder="Email Address" name="uname" required>
+        <input type="password" placeholder="Password" name="psw" required>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </label>
+        <button type="submit">Login</button>
+        <p>Not a member? <a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/registration.html">Sign up now</a></p>
+    </form>
+</div>
+</body>
+</html>
