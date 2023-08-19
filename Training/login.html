@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     body {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color: #f3f3f3;
         color: white;
     }
     .container {
         background: #003366;
         border-radius: 20px;
-        box-shadow: 40px rgba(12, 12, 12, 0.1);
         padding: 10px;
         width: 25%;
         margin-left: 35%;
@@ -54,25 +50,58 @@
         text-decoration: underline;
     }
 
-    span.psw{
+    p.psw{
       float: right;
+      margin-top: 0;
     }
 </style>
 <title>Login</title>
 </head>
 <body background="back1.jpg" style="height: auto;">
 <div class="container">
-    <form>
+    <form id="loginForm">
         <h2>Login</h2>
-        <input type="text" placeholder="Email Address" name="uname" required>
-        <input type="password" placeholder="Password" name="psw" required>
+        <input type="text" id="email" placeholder="Email Address" name="uname" required>
+        <input type="password" id="psw" placeholder="Password" name="psw" required>
         <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-            <span class="psw">Forgot <a href="#">password?</a></span>
+            <input type="checkbox" name="remember"> Remember me
+            <p class="psw">Forgot <a href="#">password?</a></p>
         </label>
         <button type="submit">Login</button>
         <p>Not a member? <a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/registration.html">Sign up now</a></p>
     </form>
 </div>
+<script>
+    let input = document.getElementById("email");
+    let inpu1 = document.getElementById("psw");
+    let form = document.getElementById("loginForm");
+
+    form.addEventListener("submit", function (event) {
+        if (!isValidEmail(input.value)) {
+            event.preventDefault();
+            alert("Please enter a valid email address.");
+        }else{
+            alert("Login successfull");
+        }
+    });
+
+    input.addEventListener("focusin", myFocusFunction);
+    input.addEventListener("focusout", myBlurFunction);
+    inpu1.addEventListener("focusin", myFocusFunction);
+    inpu1.addEventListener("focusout", myBlurFunction);
+
+    function myFocusFunction() {
+        this.style.backgroundColor = "bisque";
+    }
+
+    function myBlurFunction() {
+        this.style.backgroundColor = "";
+    }
+
+    function isValidEmail(email) {
+        let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailPattern.test(email);
+    }
+</script>
 </body>
 </html>

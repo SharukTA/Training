@@ -24,7 +24,7 @@
             padding: 20px;
             background-color: white;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(11, 5, 5, 0.1);
+            box-shadow: 10px 10px 10px rgba(11, 5, 5, 0.1);
         }
 
         h1 {
@@ -38,18 +38,16 @@
         }
 
         .contact-info {
-            display: flex;
-            flex-wrap: wrap;
+            display: block;
             margin-top: 20px;
         }
 
         .contact-method {
-            flex: 1;
             padding: 20px;
             border-radius: 5px;
             text-align: center;
-            background-color: #f9f9f9;
-            margin: 10px;
+            background-color: #f3ebeb;
+            margin-top: 10px;
         }
 
         .contact-method h3 {
@@ -73,19 +71,39 @@
         <p>If you have any questions or inquiries, feel free to reach out to us:</p>
 
         <div class="contact-info">
-            <div class="contact-method">
+            <div class="contact-method" onclick="showEmail()">
                 <h3>Email</h3>
                 <p>info@oracle.com</p>
             </div>
-            <div class="contact-method">
+            <div id="messageContainer" onclick="clearMessage('messageContainer')"></div>
+            <div class="contact-method" onclick="showPhone()">
                 <h3>Phone</h3>
                 <p>+1-800-123-4567</p>
             </div>
+            <div id="messageContain" onclick="clearMessage('messageContain')"></div>
             <div class="contact-method">
                 <h3>Address</h3>
                 <p>123 Oracle Way, Redwood City, CA 94065</p>
             </div>
         </div>
     </div>
+
+    <script>
+        const messageContainer = document.getElementById("messageContainer");
+        const messageContain = document.getElementById("messageContain");
+
+        function showEmail() {
+            messageContainer.innerHTML = "You clicked the Email section. Send us an email at <a href='mailto:info@oracle.com'>info@oracle.com</a>.";
+        }
+
+        function showPhone() {
+            messageContain.innerHTML = "You clicked the Phone section. Call us at +1-800-123-4567.";
+        }
+
+        function clearMessage(elementId) {
+            const messageElement = document.getElementById(elementId);
+            messageElement.innerHTML = "";
+        }
+    </script>
 </body>
 </html>

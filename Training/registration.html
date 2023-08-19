@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>registration</title>
 <style>
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
-  margin: 0;
-  padding: 0;
-  background-color: #f3f3f3;
   background-size: cover;
 }
 
@@ -91,13 +89,13 @@ button:hover {
 
 
 <div class="container">
-    <form>
+    <form id="registrationForm">
         <h2><center>Sign Up<center></h2>
-        <input type="text" placeholder="First Name" name="fname" required>
-        <input type="text" placeholder="Last Name" name="lname" required>
+        <input type="text" id="myInput1" placeholder="First Name" name="fname" required>
+        <input type="text" id="myInput2" placeholder="Last Name" name="lname" required>
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob" required><br>
-        <input type="number" placeholder="Age" name="age" required>
+        <input type="number" id="myInput3" placeholder="Age" name="age" required>
         <label>Gender:</label>
             <label for="male">
                 <input type="radio" id="male" name="gender" value="male" required> Male
@@ -108,26 +106,25 @@ button:hover {
             <label for="other">
                 <input type="radio" id="other" name="gender" value="other" required> Other
             </label>
-        <input type="number" placeholder="Phone" name="Phone" required>
-        <input type="email" placeholder="Email Address" name="email" required>
-        <input type="text" placeholder="Address" name="Address" required>
-        <label for="city">City:</label>
-        <select id="city" name="city">
-                <option>City 1</option>
-                <option>City 2</option>
-                <option>City 3</option>
-        </select><br>
-            
+        <input type="number" id="myInput4" placeholder="Phone" name="Phone" required>
+        <input type="email" id="myInput5" placeholder="Email Address" name="email" required>
+        <input type="text" id="myInput6" placeholder="Address" name="Address" required>
         <label for="state">State:</label>
         <select id="state" name="state">
                 <option>Kerala</option>
                 <option>Tamil Nadu</option>
                 <option>Karnataka</option>
         </select>
-        <input type="text" placeholder="Username" name="uname" required>
-        <input type="password" placeholder=" Password" name="psw" required>
-        <input type="password" placeholder=" Confirm Password" name="psw" required>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
+        <label for="city">City:</label>
+        <select id="city" name="city">
+                <option>City 1</option>
+                <option>City 2</option>
+                <option>City 3</option>
+        </select><br>
+        <input type="text" id="myInput7" placeholder="Username" name="uname" required>
+        <input type="password" id="myInput8" placeholder=" Password" name="psw" required>
+        <input type="password" id="myInput9" placeholder=" Confirm Password" name="psw" required>
+        <input type="checkbox" name="remember"> Remember me
         <p>By creating an account you agree to our <a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/about.html">Terms & Privacy</a>.</p>
         </label>    
         <button type="submit">Register</button>
@@ -136,4 +133,5 @@ button:hover {
     </form>
 </div>
 </body>
+<script src="script.js"></script>
 </html>

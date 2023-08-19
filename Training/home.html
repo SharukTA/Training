@@ -8,7 +8,14 @@
 <body>
     <header>
         <div class="logo">
-            <img src="C:\Users\sharu\Downloads\oracle.png" alt="Oracle Logo">
+            <img src="C:\Users\sharu\Downloads\oracle.png" alt="Oracle Logo" id="logo">
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="C:\Users\sharu\Downloads\oracle.png" alt="Oracle Logo">
+            </div>
         </div>
         <nav>
             <ul>
@@ -19,7 +26,7 @@
             </ul>
         </nav>
     </header>
-    <div class="hero">
+    <div class="index">
         <h1>Welcome to Oracle</h1>
         <p>Your Trusted Technology Partner</p>
     </div>
@@ -56,5 +63,19 @@
         </div>
         <p>&copy; 2023 Oracle Corporation. All rights reserved.</p>
     </footer>
+    <script>
+        var modal = document.getElementById("myModal");
+        var logo = document.getElementById("logo");
+        var closeBtn = document.getElementById("close");
+
+        logo.onclick = function() {
+        modal.style.display = "block";
+        }
+
+
+        closeBtn.onclick = function() {
+        modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
