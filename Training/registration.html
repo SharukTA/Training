@@ -1,96 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>registration</title>
+<meta charset="utf-8">
+<title>Registration</title>
 <style>
-body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
-  background-size: cover;
-}
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        background-size: cover;
+    }
+    .container {
+        width: 30%;
+        padding: 10px;
+        margin-left: 35%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: rgba(0, 51, 102, 0.9);
+        border-radius: 20px;
+    }
+    .container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #fff;
+    }
 
-.container {
-  width: 30%;
-  padding: 10px;
-  margin-left: 35%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: rgba(0, 51, 102, 0.9);
-  border-radius: 20px;
-}
+    .container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"],
+    select {
+        width: 94%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+    }
 
-.container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #fff;
-}
+    select {
+    padding: 10px;
+    }
 
-.container label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #fff;
-}
+    input[type="radio"] {
+    margin-right: 5px;
+    }
+    button {
+        background-color: #6b9e43;
+        color: white;
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+    }
+    button:hover {
+        background-color: #469ffe;
+        opacity: 0.8;
+    }
+    .container p {
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        }
 
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="email"],
-input[type="date"],
-select {
-  width: 95%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  background-color: #f7f7f7;
-}
+        .container p a {
+        color: dodgerblue;
+        text-decoration: none;
+        }
 
-select {
-  padding: 10px;
-}
-
-input[type="radio"] {
-  margin-right: 5px;
-}
-
-button {
-  background-color: #6b9e43;
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 10px;
-  width: 100%;
-}
-
-button:hover {
-  background-color: #469ffe;
-  opacity: 0.8;
-}
-
-.container p {
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-}
-
-.container p a {
-  color: dodgerblue;
-  text-decoration: none;
-}
-
-.container p a:hover {
-  text-decoration: underline;
-  color: red;
-}
-
-</style>
+        .container p a:hover {
+        text-decoration: underline;
+        color: red;
+        }
+</style>     
 </head>
-<body background="back1.jpg">
-
-
+<body onload='document.form1.text1.focus()' background="back1.jpg" style="height: auto;"> 
 <div class="container">
-    <form id="registrationForm">
-        <h2><center>Sign Up<center></h2>
+    <h2>Sign Up</h2>
+    <form name="form1" action="#"> 
         <input type="text" id="myInput1" placeholder="First Name" name="fname" required>
         <input type="text" id="myInput2" placeholder="Last Name" name="lname" required>
         <label for="dob">Date of Birth:</label>
@@ -123,15 +116,12 @@ button:hover {
         </select><br>
         <input type="text" id="myInput7" placeholder="Username" name="uname" required>
         <input type="password" id="myInput8" placeholder=" Password" name="psw" required>
-        <input type="password" id="myInput9" placeholder=" Confirm Password" name="psw" required>
+        <input type="password" id="myInput9" placeholder=" Confirm Password" name="confirmPsw" required>
         <input type="checkbox" name="remember"> Remember me
         <p>By creating an account you agree to our <a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/about.html">Terms & Privacy</a>.</p>
-        </label>    
-        <button type="submit">Register</button>
-        
-
+        <button type="submit" name="submit" value="Submit" onclick="validateForm()">Register</button>
     </form>
 </div>
-</body>
 <script src="script.js"></script>
+</body>
 </html>
