@@ -11,21 +11,75 @@
         }
 
         .about {
-            background-color: #003366;
+            background-color: #3e8ddc;
             color: white;
             padding: 10px;
             text-align: center;
         }
 
+        header {
+        background-color: #003366;
+        color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-left: 600px;
+        padding: 0;
+    }
+
+nav li a{
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+a{
+    color: white;
+}
+
+    a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+
         .container {
             width: 800px;
             margin: auto;
             margin-top: 20px;
+            margin-bottom: 20px;
             padding: 20px;
             background-color: white;
             border-radius: 10px;
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
         }
+
+        footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a:hover{
+    color: red;
+}
 
         h1 {
             margin-bottom: 20px;
@@ -41,6 +95,20 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\sharu\Downloads\oracle.png" alt="Oracle Logo" id="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/sharu/Downloads/Training/home.html">HOME</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/about.html">ABOUT US</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/contact.html">CONTACT US</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/registration.html">SIGN UP</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="about">
         <h1>About Us - Oracle</h1>
     </div>
@@ -68,5 +136,11 @@
             <li>CFO: [CFO Name]</li>
         </ul>
     </div>
+    <footer>
+        <div class="address">
+            <p>123 Oracle Way, Redwood City, CA 94065</p>
+        </div>
+        <p>&copy; 2023 Oracle Corporation. All rights reserved.</p>
+    </footer>
 </body>
 </html>

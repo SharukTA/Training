@@ -5,9 +5,10 @@
 <title>Registration</title>
 <style>
     body {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         color: white;
-        background-size: cover;
+        margin: 0;
+        padding: 0;
     }
     .container {
         width: 30%;
@@ -69,6 +70,60 @@
         color: #fff;
         }
 
+        header {
+        width: 100%;
+        background-color: #003366;
+        color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-left: 600px;
+        padding: 0;
+    }
+
+    footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a:hover{
+    color: red;
+}
+
+nav li a{
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+a{
+    color: white;
+}
+
+    a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+
         .container p a {
         color: dodgerblue;
         text-decoration: none;
@@ -80,14 +135,33 @@
         }
 </style>     
 </head>
-<body onload='document.form1.text1.focus()' background="back1.jpg" style="height: auto;"> 
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\sharu\Downloads\oracle.png" alt="Oracle Logo" id="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/sharu/Downloads/Training/home.html">HOME</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/about.html">ABOUT US</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/contact.html">CONTACT US</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/registration.html">SIGN UP</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
 <div class="container">
     <h2>Sign Up</h2>
-    <form name="form1" action="#"> 
+    <form id="form1"> 
+        <label for="myInput1">First Name:</label>
         <input type="text" id="myInput1" placeholder="First Name" name="fname" required>
+        <span id="f-error" style="color: red; display: none;">first name only contain letters.</span>
+        <label for="myInput2">Last Name:</label>
         <input type="text" id="myInput2" placeholder="Last Name" name="lname" required>
+        <span id="l-error" style="color: red; display: none;">last name only contain letters.</span>
         <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required><br>
+        <input type="date" id="dob" name="dob" max="2009-01-01" required><br>
+        <label for="myInput3">Age:</label>
         <input type="number" id="myInput3" placeholder="Age" name="age" required>
         <label>Gender:</label>
             <label for="male">
@@ -99,29 +173,43 @@
             <label for="other">
                 <input type="radio" id="other" name="gender" value="other" required> Other
             </label>
+        <label for="myInput4">Phone NO:</label>
         <input type="number" id="myInput4" placeholder="Phone" name="Phone" required>
+        <span id="phone-error" style="color: red;display: none;">Invalid Phone Number</span>
+        <label for="myInput5">Email Address:</label>
         <input type="email" id="myInput5" placeholder="Email Address" name="email" required>
+        <span id="email-error" style="color: red;display: none;">Invalid Email Address</span>
+        <label for="myInput6">Address:</label>
         <input type="text" id="myInput6" placeholder="Address" name="Address" required>
         <label for="state">State:</label>
-        <select id="state" name="state">
-                <option>Kerala</option>
-                <option>Tamil Nadu</option>
-                <option>Karnataka</option>
+        <select id="state" name="state" onchange="populateCities()">
+            <option value="Kerala">Kerala</option>
+            <option value="TamilNadu">Tamil Nadu</option>
+            <option value="Karnataka">Karnataka</option>
         </select>
         <label for="city">City:</label>
         <select id="city" name="city">
-                <option>City 1</option>
-                <option>City 2</option>
-                <option>City 3</option>
+        
         </select><br>
+        <label for="myInput7">Username:</label>
         <input type="text" id="myInput7" placeholder="Username" name="uname" required>
+        <label for="myInput8">Password:</label>
         <input type="password" id="myInput8" placeholder=" Password" name="psw" required>
+        <span id="password-error" style="color: red; display: none;">Password must be at least 8 characters long.</span>
+        <label for="myInput9">Confirm Password:</label>
         <input type="password" id="myInput9" placeholder=" Confirm Password" name="confirmPsw" required>
+        <span id="cpassword-error" style="color: red; display: none;">Password does not match</span>
         <input type="checkbox" name="remember"> Remember me
         <p>By creating an account you agree to our <a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/about.html">Terms & Privacy</a>.</p>
-        <button type="submit" name="submit" value="Submit" onclick="validateForm()">Register</button>
+        <button type="submit" name="submit" value="Submit">SIGN UP</button>
     </form>
 </div>
+<footer>
+    <div class="address">
+        <p>123 Oracle Way, Redwood City, CA 94065</p>
+    </div>
+    <p>&copy; 2023 Oracle Corporation. All rights reserved.</p>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

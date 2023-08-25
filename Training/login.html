@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
 <title>Login</title>
 <style>
     body {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         color: white;
+        margin: 0;
+        padding: 0;
     }
     .container {
         background: #003366;
         border-radius: 20px;
         padding: 10px;
         width: 25%;
-        margin-left: 35%;
-        margin-top: 13%;
+        margin-left: 37%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     h2 {
         font-size: 24px;
@@ -46,6 +48,61 @@
         color: #469ffe;
         text-decoration: none;
     }
+    
+    header {
+        background-color: #003366;
+        color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+
+    .validation-message {
+            color: rgb(250, 28, 28);
+            font-size: 16px;
+            display: block;
+            margin-top: 5px;
+        }
+
+    .logo img {
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-left: 600px;
+        padding: 0;
+    }
+
+    footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a:hover{
+    color: red;
+}
+
+nav li a{
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+a{
+    color: white;
+}
 
     a:hover{
         color: red;
@@ -58,40 +115,92 @@
     }
 </style>     
 </head>
-<body onload='document.form1.text1.focus()' background="back1.jpg" style="height: auto;"> 
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\sharu\Downloads\oracle.png" alt="Oracle Logo" id="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/sharu/Downloads/Training/home.html">HOME</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/about.html">ABOUT US</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/contact.html">CONTACT US</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/registration.html">SIGN UP</a></li>
+                <li><a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>    
 <div class="container">
     <h2>Login</h2>
-    <form name="form1" action="#"> 
-        <input type='text' id="email" placeholder="Email Address" name='text1'>
-        <input type='password' id="psw" placeholder="password" name='psw'>
-        <label>
-            <input type="checkbox" name="remember"> Remember me
-            <p class="psw">Forgot <a href="#">password?</a></p>
-        </label>
-        <button type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)">Login</button>
-        <p>Not a member? <a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/registration.html">Sign up now</a></p>
-    </form>
-</div>
+    <form id="form1">
+            <label>Email Address:</label> 
+            <input type='text' id="email" placeholder="Email Address" name='text1' required>
+            <span id="email-error" style="color: red;display: none;">Invalid Email Address</span>
+            <label>Password:</label> 
+            <input type='password' id="psw" placeholder="password" name='psw' required>
+            <span id="password-error" style="color: red; display: none;">Invalid Password</span>
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+                <p class="psw">Forgot <a href="#">password?</a></p>
+            </label>
+            <button type="submit" name="submit" value="Submit">Login</button>
+            <p>Not a member? <a href="file:///C:/Users/sharu/OneDrive/Desktop/Training/registration.html">Sign up now</a></p>
+        </form>
+    </div>
+    <footer>
+        <div class="address">
+            <p>123 Oracle Way, Redwood City, CA 94065</p>
+        </div>
+        <p>&copy; 2023 Oracle Corporation. All rights reserved.</p>
+    </footer>
 <script>
     let input = document.getElementById("email");
+    const emailerror = document.getElementById("email-error");
+    const emailpattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let inpu1 = document.getElementById("psw");
+    const passworderror = document.getElementById("password-error");
+    let form = document.getElementById("form1");
 
-    function ValidateEmail(inputText)
+
+    input.addEventListener("focusout",function()
     {
-        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if(inputText.value.match(mailformat))
-        {
-            alert("Login Successfull");
-            // document.form1.text1.focus();
-            // return true;
-        }
-        else
-        {
-            alert("You have entered an invalid email address!");
-            document.form1.text1.focus();
-            return false;
-        }
+    if(!emailpattern.test(input.value)){
+        emailerror.style.display="block";
+        input.style.borderColor="red";
     }
+    else{
+        emailerror.style.display="none";
+        input.style.borderColor="";
+    }
+});
+
+inpu1.addEventListener("focusout",function()
+    {
+    if(inpu1.value.length<8){
+        passworderror.style.display="block";
+        inpu1.style.borderColor="red";
+    }
+    else{
+        passworderror.style.display="none";
+        inpu1.style.borderColor="";
+    }
+});
+
+form.addEventListener("submit", function(event) {
+    if (
+        input.style.borderColor === "red" ||
+        inpu1.style.borderColor === "red"
+    ) {
+        alert("Please fix the validation errors before submitting the form.");
+        event.preventDefault();
+    }
+    else{
+        alert("Login successfull");
+        
+
+    }
+});
+
     input.addEventListener("focusin", myFocusFunction);
     input.addEventListener("focusout", myBlurFunction);
     inpu1.addEventListener("focusin", myFocusFunction);
