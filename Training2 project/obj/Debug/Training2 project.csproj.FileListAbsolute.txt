@@ -1,0 +1,10 @@
+C:\Users\sharu\OneDrive\Desktop\Training2 project\bin\Debug\Training2 project.exe.config
+C:\Users\sharu\OneDrive\Desktop\Training2 project\bin\Debug\Training2 project.exe
+C:\Users\sharu\OneDrive\Desktop\Training2 project\bin\Debug\Training2 project.pdb
+C:\Users\sharu\OneDrive\Desktop\Training2 project\obj\Debug\Training2 project.csproj.AssemblyReference.cache
+C:\Users\sharu\OneDrive\Desktop\Training2 project\obj\Debug\Training2_project.Form1.resources
+C:\Users\sharu\OneDrive\Desktop\Training2 project\obj\Debug\Training2_project.Properties.Resources.resources
+C:\Users\sharu\OneDrive\Desktop\Training2 project\obj\Debug\Training2 project.csproj.GenerateResource.cache
+C:\Users\sharu\OneDrive\Desktop\Training2 project\obj\Debug\Training2 project.csproj.CoreCompileInputs.cache
+C:\Users\sharu\OneDrive\Desktop\Training2 project\obj\Debug\Training2 project.exe
+C:\Users\sharu\OneDrive\Desktop\Training2 project\obj\Debug\Training2 project.pdb

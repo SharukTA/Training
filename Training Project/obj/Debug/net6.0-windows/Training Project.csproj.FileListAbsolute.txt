@@ -1,0 +1,47 @@
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Training Project.exe
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Training Project.deps.json
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Training Project.runtimeconfig.json
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Training Project.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Training Project.pdb
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training_Project.Form1.resources
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.csproj.GenerateResource.cache
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.AssemblyInfoInputs.cache
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.AssemblyInfo.cs
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.csproj.CoreCompileInputs.cache
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\refint\Training Project.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.pdb
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.genruntimeconfig.cache
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\ref\Training Project.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training_Project.Form2.resources
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.csproj.AssemblyReference.cache
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\System.Windows.Forms.DataVisualization.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training Project.csproj.CopyComplete
+C:\Users\sharu\OneDrive\Desktop\Training Project\obj\Debug\net6.0-windows\Training_Project.Form3.resources
