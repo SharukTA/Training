@@ -1,0 +1,10 @@
+C:\Users\sharu\OneDrive\Desktop\Training3\bin\Debug\Training3.exe.config
+C:\Users\sharu\OneDrive\Desktop\Training3\bin\Debug\Training3.exe
+C:\Users\sharu\OneDrive\Desktop\Training3\bin\Debug\Training3.pdb
+C:\Users\sharu\OneDrive\Desktop\Training3\obj\Debug\Training3.csproj.AssemblyReference.cache
+C:\Users\sharu\OneDrive\Desktop\Training3\obj\Debug\Training3.Form1.resources
+C:\Users\sharu\OneDrive\Desktop\Training3\obj\Debug\Training3.Properties.Resources.resources
+C:\Users\sharu\OneDrive\Desktop\Training3\obj\Debug\Training3.csproj.GenerateResource.cache
+C:\Users\sharu\OneDrive\Desktop\Training3\obj\Debug\Training3.csproj.CoreCompileInputs.cache
+C:\Users\sharu\OneDrive\Desktop\Training3\obj\Debug\Training3.exe
+C:\Users\sharu\OneDrive\Desktop\Training3\obj\Debug\Training3.pdb
