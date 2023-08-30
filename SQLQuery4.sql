@@ -316,3 +316,11 @@ EXEC ManageUser
 SELECT * FROM register
 EXEC ManageUser @Action = 'DELETE', @UserID = 4;
 SELECT * FROM register
+DELETE FROM register WHERE id = 6;
+SELECT * FROM register
+ALTER TABLE register
+ALTER COLUMN gender NVARCHAR(10);
+SELECT * FROM register
+DELETE FROM register WHERE id = 7;
+TRUNCATE TABLE register;
+
